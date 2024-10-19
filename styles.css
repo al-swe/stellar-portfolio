@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#home {
+    color: white;
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: white;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url(
+    "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.snap-container {
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+.slides {
+    width: 100%;
+    height: 100vh;
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
+    gap: 50px;
+    color: white;
+    /*background: linear-gradient(90deg, tomato, #f8917f);*/
+    scroll-snap-align: start;
+}
+
+.slides img {
+    width: 350px;
+}
+
+.slide-1 {
+    position: relative;
+    background-image: url("./img/super/super.png");
+    background-size: cover;
+    background-position: center;
+    /*background: linear-gradient(90deg, tomato, #f8917f);*/
+}
+
+.slide-2 {
+    position: relative;
+    background-image: url("./img/sport/sport.png");
+    background-size: cover;
+    background-position: center;
+    /*background: linear-gradient(90deg, #86ccff, #47b2ff);*/
+}
+
+.slide-3 {
+    position: relative;
+    background-image: url("./img/suv/suv.png");
+    background-size: cover;
+    background-position: center;
+    /*background: linear-gradient(90deg, #4dff47, #83f87f);*/
+}
+
+.slide-4 {
+    position: relative;
+    background-image: url("./img/4x4/4x4.png");
+    background-size: cover;
+    background-position: center;
+    /*background: linear-gradient(90deg, #4dff47, #83f87f);*/
+}
+
+.slide-5 {
+    position: relative;
+    background-color: #c57a4d;
+    /*background-image: url("./img/4x4/4x4.png");*/
+    /*background-size: cover;*/
+    /*background-position: center;*/
+    /*background: linear-gradient(90deg, #4dff47, #83f87f);*/
+}
+
+.slide-content-top {
+    padding-top: 150px;
+}
+
+.slide-content-top h2,
+.slide-content-top p {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+.slide-content-bottom {
+    position: absolute;
+    bottom: 80px;
+}
+
+.footer {
+    max-height: 100%;
+}
+
+.footer-icon {
+    font-size: 5rem;
+}
+
+.social-icons i {
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: ease 0.3s;
+}
+
+.social-icons i:hover {
+    text-shadow: 0 0 10px #fff;
+}
+
+.accordion-button:not(.collapsed) {
+    --bs-accordion-active-bg: #c57a4d;
+    --bs-accordion-active-color: white;
+}
+
+#engineImg {
+    min-height: 100%;
+    background-image: url("./img/engine.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#interiorImg {
+    min-height: 100%;
+    background-image: url("./img/interior.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#sustImg {
+    min-height: 100%;
+    background-image: url("./img/sustainability.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#designImg {
+    min-height: 100%;
+    background-image: url("./img/design.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#electronicsImg {
+    min-height: 100%;
+    background-image: url("./img/electronics.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#racetrackImg {
+    min-height: 100%;
+    background-image: url("./img/racetrack.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#hyperionImg {
+    min-height: 100%;
+    background-image: url("./img/super/super.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.modal-header {
+    --bs-modal-header-border-color: white;
+}
+
+#thankYouContainer {
+    display: none;
+}
+
+
+@media screen and (max-width: 600px) {
+    .slide-1 {
+        background-image: url("./img/super/super-sm.png");
+    }
+
+    .slide-2 {
+        background-image: url("./img/sport/sport-sm.png");
+    }
+
+    .slide-3 {
+        background-image: url("./img/suv/suv-sm.png");
+    }
+
+    .slide-4 {
+        background-image: url("./img/4x4/4x4-sm.png");
+    }
+}
